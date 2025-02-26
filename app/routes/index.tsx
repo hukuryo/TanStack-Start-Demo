@@ -35,16 +35,6 @@ function Home() {
 
   return (
     <div>
-      <button
-        type="button"
-        onClick={() => {
-          updateCount({ data: 1 }).then(() => {
-            router.invalidate();
-          });
-        }}
-      >
-        Add 1 to {state}?
-      </button>
       <Form />
     </div>
   );
